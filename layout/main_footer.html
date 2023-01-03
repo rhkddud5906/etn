@@ -1,0 +1,68 @@
+<footer id="footer">
+	<div class="footer_top container">
+		<div class="sevice_info">
+			<img src="img/common/ico_customer.svg" alt="메리츠 ETN 고객지원센터 이미지">
+			<h4>메리츠증권 고객지원센터</h4>
+			<strong class="eng red">1588-3400</strong>
+			<span class="gray">(이용가능시간 : 평일 08:00 ~ 18:00)</span>
+		</div>
+	</div>
+	<div class="footer_bt container">
+		<div class="footer_left">
+			<img src="img/common/f_logo2.png" alt="meritz" width="97" height="28" class="pc_none">
+			<img src="img/common/m_f_logo.png" alt="meritz" class="mo_none">
+			<address>
+				<p class="dark_gray">(07326) 서울시 영등포구 국제금융로10, three ifc</p>
+				<span class="copy eng">copyright © 2022 meritz SECURITIES CO.,LTD. ALL RIGHTS RESERVED</span>
+			</address>
+		</div>
+		<div class="family_site">
+			<button type="button" class="family_open">
+				<span class="eng700">FAMILY SITE</span>
+				<img src="img/common/ico_arrow_bt.svg" alt="패밀리사이트 열기">
+			</button>
+			<div class="family_site_option">
+				<ul>
+					<li>
+						<a href="https://home.imeritz.com" target="_blank" title="새창열림">메리츠증권</a>
+					</li>
+					<li>
+						<a href="http://www.meritzgroup.com/" target="_blank" title="새창열림">메리츠금융그룹</a>
+					</li>
+					<li>
+						<a href="https://www.meritzfire.com/main.do#!/" target="_blank" title="새창열림">메리츠화재</a>
+					</li>
+					<li>
+						<a href="https://www.meritzam.com/new/index_n.php" target="_blank" title="새창열림">메리츠자산운용</a>
+					</li>
+					<li>
+						<a href="http://www.meritzaim.co.kr/" target="_blank" title="새창열림">메리츠대체투자운용</a>
+					</li>
+					<li>
+						<a href="https://www.meritzcapital.com/ma/ma00000001V" target="_blank" title="새창열림">메리츠캐피탈</a>
+					</li>
+					<li>
+						<a href="https://store.meritzfire.com/main.do#!/" target="_blank" title="새창열림">메리츠화재다이렉트</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+	$(document).ready(function(){
+		//패밀리사이트
+		$('.family_site').on('click', '.family_open', function(){
+			$(this).toggleClass('open');
+
+			$('.family_site_option').toggleClass('open');
+			let cs = $('.family_site_option').css('visibility');
+			if(cs == "hidden"){
+				$('.family_open img').attr('alt','패밀리사이트 닫기');
+			} else{
+				$('.family_open img').attr('alt','패밀리사이트 열기');
+			};
+		});
+	});
+</script>

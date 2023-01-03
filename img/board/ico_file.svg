@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1f1f1;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #222;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #ddd;
+      }
+    </style>
+  </defs>
+  <g id="icl_file" transform="translate(-150.5 -333.5)">
+    <path id="패스_19" data-name="패스 19" class="cls-1" d="M169,341.187V354H151V334h10.286Z" transform="translate(0 0)"/>
+    <path id="패스_20" data-name="패스 20" class="cls-2" d="M174.758,341.434H167V334Z" transform="translate(-5.758)"/>
+  </g>
+</svg>

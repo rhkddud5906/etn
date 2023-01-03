@@ -1,0 +1,23 @@
+<svg id="ico_search" xmlns="http://www.w3.org/2000/svg" width="17.508" height="15.311" viewBox="0 0 17.508 15.311">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="타원_1" data-name="타원 1" class="cls-1">
+    <ellipse class="cls-2" cx="6.529" cy="6.168" rx="6.529" ry="6.168"/>
+    <ellipse class="cls-3" cx="6.529" cy="6.168" rx="5.029" ry="4.668"/>
+  </g>
+  <path id="패스_1" data-name="패스 1" class="cls-1" d="M5.223,5.223,0,0" transform="translate(10.506 8.945) rotate(-7)"/>
+</svg>

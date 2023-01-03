@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="29" viewBox="0 0 22 29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="ico_scroll" transform="translate(-952 -817.5)">
+    <path id="선_4" data-name="선 4" class="cls-1" d="M961.5,830h3v4h-3Z" transform="translate(0 0)"/>
+    <path id="사각형_9" data-name="사각형 9" class="cls-1" d="M10.5-.5a11,11,0,0,1,11,11v7A11,11,0,0,1,2.722,25.278,10.928,10.928,0,0,1-.5,17.5v-7a11,11,0,0,1,11-11Zm0,28a10.011,10.011,0,0,0,10-10v-7a10,10,0,0,0-20,0v7A10.011,10.011,0,0,0,10.5,27.5Z" transform="translate(952.5 818)"/>
+  </g>
+</svg>

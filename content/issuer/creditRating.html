@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="title" content="메리츠 ETN">
+		<meta name="description" content="메리츠 ETN">
+		<meta name="keywords" content="메리츠 ETN, 채권형 ETN, 원자재형 ETN, 지수형 ETN, 기타 ETN">
+		<meta name="author" content="메리츠 ETN">
+		<meta property="og:title" content="메리츠 ETN">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://etn.imeritz.com/img/common/og.jpg">
+		<meta property="og:description" content="메리츠 ETN">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title>발행사 신용등급 I 발행사정보 I 메리츠 ETN</title>
+		<!-- css -->
+		<link rel="icon" type="image/x-icon" href="../../img/common/favicon.ico">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../modules/font-awesome/font-awesome.css">
+
+		<!-- script -->
+		<script type="text/javascript" src="../../js/browser.js"></script>
+		<script type="text/javascript" src="../../modules/jquery/jquery-3.6.0.min.js"></script>
+	</head>
+
+	<body>
+		<div id="skipnavi">
+			<ul>
+				<li><a href="#container" title="본문내용 바로가기">본문내용 바로가기</a></li>
+				<li><a href="#gnb" title="주메뉴 바로가기">주메뉴 바로가기</a></li>
+				<li><a href="#footer" title="하단바로가기">하단 바로가기</a></li>
+			</ul>
+		</div>
+		<div id="wrapper">
+			<div class="header_include"></div>
+			<main id="container">
+				<!-- ST:서브 공통 header -->
+				<div class="sub_header_wrap">
+					<div class="sub_header infomation">
+						<div class="navigation">
+							<ul>
+								<li>
+									<a href="/">
+										<img src="../../img/common/ico_home.png" alt="메인">
+									</a>
+								</li>
+								<li>
+									<a href="../issuer/creditRating.html">
+										발행사정보
+									</a>
+								</li>
+								<li class="current">
+									<a href="../issuer/creditRating.html">
+										발행사 신용등급
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sub_header_title">
+							<h1>발행사정보 <i class="fa fa-angle-down" aria-hidden="true"></i></h1>
+							<div class="nav_include"></div>
+						</div>
+					</div>
+				</div>
+				<!-- ED:서브 공통 header -->
+
+				<!-- ST:서브 페이지 컨텐츠-->
+				<div class="container sub_container">
+					<h2 class="content_title">
+						발행사 신용등급
+					</h2>
+					<div class="table_wrap">
+						<table class="content_table">
+							<caption>발생사 신용등급 | 평가기관, 신용등급, 평가일로 구성</caption>
+							<colgroup>
+								<col width="30%">
+								<col width="35%">
+								<col width="35%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">평가기관</th>
+									<th scope="col">신용등급</th>
+									<th scope="col">평가일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">
+										<span class="eng">NICE</span>신용평가원
+									</td>
+									<td scope="row"><span class="eng">AA-</span></td>
+									<td scope="row"><span class="eng">2022.04.15</span></td>
+								</tr>
+								<tr>
+									<td scope="row">한국기업평가</td>
+									<td scope="row"><span class="eng">AA-</span></td>
+									<td scope="row"><span class="eng">2022.04.12</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btn_area left">
+						<a href="https://dart.fss.or.kr/main.do" target="_blank"  title="새창열기" class="btn_pill img">
+							발행사 공시 보러가기
+							<img src="../../img/common/ico_blank_b.svg" alt="새창열기">
+						</a>
+					</div>
+
+					<div class="noti_include"></div>
+				</div>
+				<!-- ED:서브 페이지 컨텐츠-->
+			</main>
+
+			<!-- ST:Footer -->
+			<div class="footer_include"></div>
+			<!-- ED:Footer -->
+		</div>
+
+		<script>
+			$('.header_include').load('../../layout/content_header.html'); //header
+			$('.nav_include').load('../../layout/nav.html'); //nav
+			$('.noti_include').load('../../layout/noti_box.html'); //noti
+			$('.footer_include').load('../../layout/content_footer.html'); //footer
+
+			function navActive(){
+				$('.m_nav ul li:eq(3)').addClass('active');	
+			}
+		</script>
+	</body>
+</html>

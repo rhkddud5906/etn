@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="title" content="메리츠 ETN">
+		<meta name="description" content="메리츠 ETN">
+		<meta name="keywords" content="메리츠 ETN, 채권형 ETN, 원자재형 ETN, 지수형 ETN, 기타 ETN">
+		<meta name="author" content="메리츠 ETN">
+		<meta property="og:title" content="메리츠 ETN">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://etn.imeritz.com/img/common/og.jpg">
+		<meta property="og:description" content="메리츠 ETN">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title>전체 ETN 상품 I 메리츠 ETN 시리즈 I 메리츠 ETN</title>
+		<!-- css -->
+		<link rel="icon" type="image/x-icon" href="../../img/common/favicon.ico">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../modules/font-awesome/font-awesome.css">
+		<link rel="stylesheet" href="../../modules/jquery/jquery-ui.css">
+
+		<script type="text/javascript" src="../../js/browser.js"></script>
+	</head>
+
+	<body>
+		<div id="skipnavi">
+			<ul>
+				<li><a href="#container" title="본문내용 바로가기">본문내용 바로가기</a></li>
+				<li><a href="#gnb" title="주메뉴 바로가기">주메뉴 바로가기</a></li>
+				<li><a href="#footer" title="하단바로가기">하단 바로가기</a></li>
+			</ul>
+		</div>
+		<div id="wrapper">
+			<div class="header_include"></div>
+			<main id="container">
+				<form name="etnFrm" id="etnFrm">
+					<input type="hidden" id="etnDivCode" name="etnDivCode" value="" />
+					<input type="hidden" id="etnIscd" name="etnIscd" value="" />
+
+					<!-- ST:서브 공통 header -->
+					<div class="sub_header_wrap">
+						<div class="sub_header series v2">
+							<div class="navigation">
+								<ul>
+									<li>
+										<a href="/">
+											<img src="../../img/common/ico_home.png" alt="메인">
+										</a>
+									</li>
+									<li>
+										<a href="../series/mrktPriceList.html">
+											메리츠 <span class="eng500">ETN</span> 시리즈
+										</a>
+									</li>
+									<li class="current">
+										<a href="../series/mrktPriceList.html">
+											전체 <span class="eng">ETN</span> 상품
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="sub_header_title">
+								<h1 class="tab01_td01"></h1>
+							</div>
+							<div class="price_info">
+								<ul class="price_info_intro">
+									<li>
+										<h4>현재가<span>(원)</span></h4>
+										<h3 id="main_01"></h3>
+									</li>
+									<li>
+										<h4>실시간 지표가치<span>(IIV)</span></h4>
+										<h3 id="main_02"></h3>
+									</li>
+									<li>
+										<h4>괴리율<span>(현재가-IIV)</span></h4>
+										<h3 id="main_03"></h3>
+									</li>
+								</ul>
+								
+								<div class="price_info_box">	
+									<ul class="price_info_list">
+										<li>
+											<div>
+												<h4>기초지수</h4>
+												<h3 id="main_05"></h3>
+											</div>
+										</li>
+										<li>
+											<div>
+												<h4>과표기준가<span>(원)</span></h4>
+												<h3 id="main_04"></h3>
+											</div>
+										</li>
+										<li>
+											<div>
+												<h4>운용보수</h4>
+												<h3 id="main_06"></h3>
+											</div>
+										</li>
+										<li>
+											<div>
+												<h4>상장일</h4>
+												<h3 id="main_07"></h3>
+											</div>
+										</li>
+										<li>
+											<div>
+												<h4>만기일</h4>
+												<h3 id="main_08"></h3>
+											</div>
+										</li>
+										<li>
+											<div>
+												<h4>거래량</h4>
+												<h3 id="main_09"></h3>
+											</div>
+										</li>
+										<li>
+											<div>
+												<h4>LP보유비율</h4>
+												<h3 id="main_10"></h3>
+											</div>
+										</li>
+									</ul>
+
+									<div class="price_file">
+										<a href="javascript:void(0);" name="btnDownEtnTuja" id="btnDownEtnTuja"><div>투자설명서<span><em></em></span></div></a>
+										<a href="javascript:void(0);" name="btnDownEtnInfo" id="btnDownEtnInfo"><div>기초지수 설명서<span><em></em></span></div></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ED:서브 공통 header -->
+
+					<!-- ST:서브 페이지 컨텐츠-->
+					<div class="container sub_container">
+						<div class="price_more">
+							<a href="../series/mrktPriceList.html" class="price_more_btn">상품목록</a>
+						</div>
+						<ul class="tab type2">
+							<li rel="tab1" class="active">상품개요</li>
+							<li rel="tab2">수익률</li>
+							<li rel="tab3">기초지수</li>
+						</ul>
+
+						<!-- ST : tab1 -->
+						<div class="tab_cont" id="tab1">
+							<table class="price_view_table">
+								<caption>상품개요 I 상품명, 상품 특징, 상품 구조, 만기일, 분배금 형태, 유동성 공급자(LP), 발행총액으로 구성</caption>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">상품명</th>
+										<td class="tab01_td01"></td>
+									</tr>
+									<tr>
+										<th scope="row">상품 특징</th>
+										<td id="tab01_td02"></td>
+									</tr>
+									<tr>
+										<th scope="row">상품 구조</th>
+										<td id="tab01_td03"></td>
+									</tr>
+									<tr>
+										<th scope="row">만기일</th>
+										<td id="tab01_td04"></td>
+									</tr>
+									<tr>
+										<th scope="row">분배금 형태</th>
+										<td id="tab01_td05"></td>
+									</tr>
+									<tr>
+										<th scope="row">유동성 공급자(LP)</th>
+										<td id="tab01_td06"></td>
+									</tr>
+									<tr>
+										<th scope="row">발행총액</th>
+										<td id="tab01_td07"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- EN : tab1 -->
+
+						<!-- ST : tab2 -->
+						<div class="tab_cont" id="tab2">
+							<div class="price_date_form">
+								<div class="cal_item">
+									<h4>조회기간</h4>
+									<button type="button" id="btnOneWeek">1주</button>
+									<button type="button" id="btnOneMonth">1달</button>
+									<button type="button" id="btnThreeMonth">3달</button>
+									<button type="button" id="btnSixMonth">6달</button>
+									<button type="button" id="btnOneYear">1년</button>
+								</div>
+								
+								<div class="cal_date">
+									<div class="datepicker_item">
+										<input type="text" value="" maxlength="10" id="staDate" name="staDate" onblur="validDateCheck(this,'staDate');" title="조회 시작일자 입력"><button type="button" onclick="fnCalendar('staDate',this.id)" id="d1"><img src="../../img/content/cal.gif" alt="조회 달력(레이어) 열림"></button>
+										<div id="datepicker1"></div>
+									</div>
+									<span>~</span>
+									<div class="datepicker_item">
+										<input type="text" value="" maxlength="10" id="finDate" name="finDate" onblur="validDateCheck(this,'finDate');" title="조회 종료일자 입력"><button type="button" onclick="fnCalendar('finDate',this.id)" id="d2"><img src="../../img/content/cal.gif" alt="조회 달력(레이어) 열림"></button>
+										<div id="datepicker2"></div>
+									</div>
+									<button type="button" id="DpdrBrkdIqry_search_btn_a" class="cal_submit" onclick="fnDrawChart();">조회</button>
+								</div>	
+							</div>
+							<div id="chart_div" class="chart_div"></div>
+						</div>
+						<!-- EN : tab2 -->
+
+						<!-- ST : tab3 -->
+						<div class="tab_cont" id="tab3">
+							<table class="price_view_table">
+								<caption>기초지수 I 지수명, 산출 기관, 산출 기준일 및 가격, 공식 산출일, 지수 산출 시간(한국 시간 기준), 지수 설명, 지수 산출 산식으로 구성</caption>
+								<colgroup>
+									<col width="15%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">지수명</th>
+										<td id="tab04_td01"></td>
+									</tr>
+									<tr>
+										<th scope="row">산출 기관</th>
+										<td id="tab04_td02"></td>
+									</tr>
+									<tr>
+										<th scope="row">산출 기준일 및 가격</th>
+										<td id="tab04_td03"></td>
+									</tr>
+									<tr>
+										<th scope="row">공식 산출일</th>
+										<td id="tab04_td04"></td>
+									</tr>
+									<tr>
+										<th scope="row">지수 산출 시간<br>(한국 시간 기준)</th>
+										<td id="tab04_td05"></td>
+									</tr>
+									<tr>
+										<th scope="row">지수 설명</th>
+										<td id="tab04_td06"></td>
+									</tr>
+									<tr>
+										<th scope="row">지수 산출 산식</th>
+										<td id="tab04_td07"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- EN : tab3 -->
+
+						<div class="noti_include"></div>
+					</div>
+					<!-- ED:서브 페이지 컨텐츠-->
+				</form>
+			</main>
+
+			<!-- ST:Footer -->
+			<div class="footer_include"></div>
+			<!-- ED:Footer -->
+		</div>
+		
+		<script type="text/javascript" src="../../modules/jquery/jquery-1.7.min.js"></script>
+		<script type="text/javascript" src="../../content/series/js/mrktPriceCom.js"></script>
+		<script type="text/javascript" src="../../content/series/js/mrktPriceObank.js"></script>
+		<script type="text/javascript" src="../../modules/highcharts/highcharts.js"></script>
+		<script type="text/javascript" src="../../modules/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../content/series/js/mrktPriceView.js"></script>
+		<script>
+			$('.header_include').load('../../layout/content_header.html'); //header
+			$('.noti_include').load('../../layout/noti_box.html'); //noti
+			$('.footer_include').load('../../layout/content_footer.html'); //footer
+
+			$(document).ready(function(){ 
+				// tab
+				$('.tab_cont').hide();
+				$('.tab_cont:first').show();
+
+				$('.tab li').click(function(){
+					$('.tab li').removeClass('active');
+					$(this).addClass('active');
+					$('.tab_cont').hide();
+					var activeTab = $(this).attr('rel');
+					$('#' + activeTab).show();
+				});
+			});
+		</script>
+	</body>
+</html>

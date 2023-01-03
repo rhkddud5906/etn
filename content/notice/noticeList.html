@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="title" content="메리츠 ETN">
+		<meta name="description" content="메리츠 ETN">
+		<meta name="keywords" content="메리츠 ETN, 채권형 ETN, 원자재형 ETN, 지수형 ETN, 기타 ETN">
+		<meta name="author" content="메리츠 ETN">
+		<meta property="og:title" content="메리츠 ETN">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://etn.imeritz.com/img/common/og.jpg">
+		<meta property="og:description" content="메리츠 ETN">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title>공시 및 공지사항 I ETN 알림판 I 메리츠 ETN</title>
+		<!-- css -->
+		<link rel="icon" type="image/x-icon" href="../../img/common/favicon.ico">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/font.css">
+		<link rel="stylesheet" href="../../modules/font-awesome/font-awesome.css">
+
+		<!-- script -->
+		<script type="text/javascript" src="../../js/browser.js"></script>
+		<script type="text/javascript" src="../../modules/jquery/jquery-3.6.0.min.js"></script>
+	</head>
+
+	<body>	
+		<div id="skipnavi">
+			<ul>
+				<li><a href="#container" title="본문내용 바로가기">본문내용 바로가기</a></li>
+				<li><a href="#gnb" title="주메뉴 바로가기">주메뉴 바로가기</a></li>
+				<li><a href="#footer" title="하단바로가기">하단 바로가기</a></li>
+			</ul>
+		</div>
+		<div id="wrapper">
+			<div class="header_include"></div>
+			<main id="container">
+				<!-- ST:서브 공통 header -->
+				<div class="sub_header_wrap">
+					<div class="sub_header infomation sub_header_tab">
+						<div class="navigation">
+							<ul>
+								<li>
+									<a href="/">
+										<img src="../../img/common/ico_home.png" alt="메인">
+									</a>
+								</li>
+								<li>
+									<a href="../notice/noticeList.html">
+										<span class="eng">ETN</span> 알림판
+									</a>
+								</li>
+								<li class="current">
+									<a href="../notice/noticeList.html">
+										공시 및 공지사항
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sub_header_title">
+							<h1><span class="eng">ETN</span> 알림판 <i class="fa fa-angle-down" aria-hidden="true"></i></h1>
+							<div class="nav_include"></div>
+						</div>
+					</div>
+
+					<div class="sub_tab_wrap">
+						<ul class="li2">
+							<li class="active">
+								<a href="../notice/noticeList.html">
+									공시 및 공지사항
+								</a>
+							</li>
+							<li>
+								<a href="../notice/faq.html">
+									FAQ
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- ED:서브 공통 header -->
+
+				<!-- ST:서브 페이지 컨텐츠-->
+				<div class="container sub_container">
+					<div class="list_banner_wrap">
+						<div class="list_banner">
+							<div class="banner_txt">
+								<h3>공시 및 공지사항</h3>
+								<p>다양한 소식을 알려드립니다.</p>
+							</div>
+							<img src="../../img/content/notice/notice_banner01.png" alt="공시및 공지사항 다양한 소식을 알려드립니다.">
+						</div>
+						<iframe class="iframe_content" src="https://home.imeritz.com/bbs/BbsEtnList.go?bbsGrpId=bascGrp&bbsId=etnBbs&listCnt=10&pageNum=1&searchDiv=&searchText=" frameborder="0" scrolling="no" title="공시 및 공지사항 게시물 프레임"></iframe>
+					</div>
+
+					<div class="noti_include"></div>
+				</div>
+				<!-- ED:서브 페이지 컨텐츠-->
+			</main>
+
+			<!-- ST:Footer -->
+			<div class="footer_include"></div>
+			<!-- ED:Footer -->
+		</div>
+
+		<script>
+			$('.header_include').load('../../layout/content_header.html'); //header
+			$('.nav_include').load('../../layout/nav.html'); //nav
+			$('.noti_include').load('../../layout/noti_box.html'); //noti
+			$('.footer_include').load('../../layout/content_footer.html'); //footer
+
+			// iframe resize
+			var myEventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+			var myEventListener = window[myEventMethod];
+			var myEventMessage = myEventMethod == "attachEvent" ? "onmessage" : "message";
+			myEventListener(myEventMessage, function (e) {
+				if (e.data === parseInt(e.data)) 
+				document.querySelector(".iframe_content").height = (parseInt(e.data)+20) + "px";
+			}, false);
+			
+			// BbsEtnList에 해당 소스 추가
+			/*window.onload = function() {
+				window.parent.postMessage(
+					document.body.scrollHeight
+					,"https://etn.imeritz.com/content/notice/noticeList.html, https://etn.imeritz.com/content/series/assetInformation.html"
+				)
+			};*/
+
+			/*if (document.location.protocol == 'http:') {
+				document.location.href = document.location.href.replace('http:', 'https:');
+			};*/
+
+			function navActive(){
+				$('.m_nav ul li:eq(2)').addClass('active');	
+			}
+		</script>
+	</body>
+</html>
